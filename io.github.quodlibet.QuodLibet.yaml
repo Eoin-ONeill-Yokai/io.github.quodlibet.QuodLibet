@@ -151,14 +151,8 @@ modules:
     buildsystem: cmake
     sources:
       - type: archive
-        url: https://bitbucket.org/mpyne/game-music-emu/downloads/game-music-emu-0.6.3.tar.xz
-        sha256: aba34e53ef0ec6a34b58b84e28bf8cfbccee6585cebca25333604c35db3e051d
-        x-checker-data:
-          type: anitya
-          project-id: 866
-          stable-only: true
-          url-template: https://bitbucket.org/mpyne/game-music-emu/downloads/game-music-emu-$version.tar.xz
-
+        url: https://github.com/Eoin-ONeill-Yokai/Game_Music_Emu/archive/refs/heads/master.zip
+        sha256: cc3c05b0d4f3878ec8b218f0a01ccf56138deb19945b2aded8e73796248faf05
   - name: gst-plugins-bad
     buildsystem: meson
     sources:
@@ -202,12 +196,8 @@ modules:
       - python3 setup.py install --prefix=${FLATPAK_DEST} --root=/
     sources:
       - type: git
-        url: https://github.com/quodlibet/quodlibet.git
-        tag: release-4.5.0
-        commit: 7e82d050c765a1d6f3ee84009461aa07acd64b58
-        x-checker-data:
-          type: git
-          tag-pattern: ^release-([\d.]+)$
+        url: https://github.com/Eoin-ONeill-Yokai/quodlibet.git
+        branch: libraries
 
 cleanup:
   - /include
